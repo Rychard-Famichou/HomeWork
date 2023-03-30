@@ -14,7 +14,7 @@ public class A4Char {
         System.out.println();
 
         System.out.println("Tack 2");
-        // Given
+        // Given symbol
         char w = '9';
         System.out.println("Symbol: " + w);
         // Method .getNumericValue() class Character
