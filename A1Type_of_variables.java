@@ -2,6 +2,7 @@ package HomeWork;
 
 class A1Type_of_variables {
     public static void main(String[] args) {
+        
         // Given
         short q = 365;
         System.out.print("Number = ");
