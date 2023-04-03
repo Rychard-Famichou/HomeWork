@@ -1,2 +1,2 @@
 # Hello_World
-# Here I post my homework from Tell-Ran.
+# Here I post my Java homework from Tell-Ran.
