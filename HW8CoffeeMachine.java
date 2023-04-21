@@ -36,7 +36,7 @@ public class HW8CoffeeMachine {
             case 3 -> algorithm.Cappuccino();
             case 4 -> algorithm.Tea();
         }
-        switch (numberDrink){
+        switch (numberDrink) {
             case 1, 2, 3, 4 -> algorithm.Ready();
         }
     }
