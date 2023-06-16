@@ -12,12 +12,12 @@ public class Person {
 
     public static void move(Person x)
     	{
-        System.out.println("Person " + x.getFullName() + " move");
+        System.out.println("Person " + x.getFullName() + " move.");
     	}
 
     public static void talk(Person x)
     	{
-        System.out.println("Person " + x.getFullName() + " talk");
+        System.out.println("Person " + x.getFullName() + " talk.");
     	}
 
     public Person() {}
