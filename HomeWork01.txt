@@ -28,9 +28,9 @@ public class Person {
     	}
     public static void main(String[] args) {
         Person one = new Person();
-        one.setFullName("Alexander");
+        one.setFullName("'Alexander'");
         one.setAge(14);
-        Person two = new Person("Maria", 12);
+        Person two = new Person("'Maria'", 12);
         move(one);
         talk(two);
     	}
