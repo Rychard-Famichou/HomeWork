@@ -1,0 +1,93 @@
+Task 01
+package homeWork;
+
+public class Person {
+    String fullName;
+    int age;
+
+    public String getFullName() {return fullName;}
+    public void setFullName(String fullName) {this.fullName = fullName;}
+    public int getAge() {return age;}
+    public void setAge(int age) {this.age = age;}
+
+    public static void move(Person x)
+    	{
+        System.out.println("Person " + x.getFullName() + " move");
+    	}
+
+    public static void talk(Person x)
+    	{
+        System.out.println("Person " + x.getFullName() + " talk");
+    	}
+
+    public Person() {}
+    public Person(String fullName, int age) 
+	{
+        this.fullName = fullName;
+        this.age = age;
+    	}
+    public static void main(String[] args) {
+        Person one = new Person();
+        one.setFullName("Alexander");
+        one.setAge(14);
+        Person two = new Person("Maria", 12);
+        move(one);
+        talk(two);
+    	}
+}
+
+
+
+Task 02
+package homeWork;
+
+public class Phone {
+    int number;
+    String model;
+    int weight;
+
+    public int getNumber() {return number;}
+    public void setNumber(int number) {this.number = number;}
+    public String getModel() {return model;}
+    public void setModel(String model) {this.model = model;}
+    public int getWeight() {return weight;}
+    public void setWeight(int weight) {this.weight = weight;}
+
+    public Phone(int number, String model, int weight)
+	{
+        this.number = number;
+        this.model = model;
+        this.weight = weight;
+	}
+
+    public static void main(String[] args){
+        Phone one = new Phone(111_111_111, "Iphone", 1_111);
+        Phone two = new Phone(222_222_222, "Samsung", 2_222);
+        Phone three = new Phone(333_333_333, "Xiaomi", 3_333);
+        look(one);
+        look(two);
+        look(three);
+        System.out.println();
+        receiveCall(one);getNumber(one);
+        receiveCall(two);getNumber(two);
+        receiveCall(three);getNumber(three);
+	}
+
+    public static void look (Phone x)
+  	{
+        System.out.println("Phone: " + x.getModel());
+        System.out.println("PhoneNumber: " + x.getNumber());
+        System.out.println("PhoneWeight: " + x.getWeight());
+        System.out.println();
+   	}
+
+    public static void receiveCall (Phone x)
+    	{
+        System.out.print("\"" + x.getModel() + "\"" + " call you. ");
+    	}
+
+    public static void getNumber (Phone x)
+    	{
+        System.out.println("He number is " + x.getNumber() + ".");
+    	}
+}
